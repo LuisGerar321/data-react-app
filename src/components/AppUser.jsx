@@ -1,6 +1,7 @@
 import React, {useContext}  from 'react'
 
 import { Login } from './Login'
+import { SignUp } from './SignUp'
 import { ThemeContext } from '../context/ThemeContext'
 import { ButtonTheme } from './ButtonTheme'
 import { LoginContext } from '../context/LoginContext '
@@ -28,6 +29,7 @@ export const AppUser = () => {
 
                         {/* <LoginProvider> */}
                                 <Login/>
+                                <SignUp></SignUp>
                                 <ButtonTheme/>
                         {/* </LoginProvider> */}
 

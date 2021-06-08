@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //This is local gotting by the user//
 const formInfo  = {
-        user: "test",
+        user: "admin",
         password: "12345",
 }
 
