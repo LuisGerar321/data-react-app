@@ -7,9 +7,12 @@ import IconButton from '@material-ui/core/IconButton';
 
 
 
+
+
 export const Card = () => {
         const {users_, setUsers} = useContext(UserContext);
         const {theme, themeConfigFixed, isDay} = useContext (  ThemeContext  )
+
 
         const callBackDelate = (index ) => {
                 const myUsers =  users_.filter( user => user.id !== index );
@@ -27,9 +30,9 @@ export const Card = () => {
                                                 </IconButton>
                                                 <img className = "img" src={ element.avatar} alt="" />
                                                 <hr />
-                                                <h2> {element.name} </h2>
+                                                <h2> {element.first_name} {element.last_name} </h2>
                                                 <hr />
-                                                <h6> {element.biography}  </h6>
+                                                <h6> {element.email}  </h6>
                                                 <hr />
                                                 <h6> {element.id}  </h6>
 
